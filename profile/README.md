@@ -1,55 +1,118 @@
-# 🌐 ZaaNet
+# ZaaNet
 
-Welcome to the **ZaaNet GitHub Organization** – home of the **open-source smart contracts** powering the ZaaNet platform.
-
----
-
-## ❓ What is ZaaNet?
-
-**ZaaNet** is a **decentralized WiFi-sharing platform** that enables anyone to:
-
-* 📡 **Monetize their WiFi** — Turn your connection into income by setting your own hourly rate.
-* 🔑 **Provide secure guest access** — Guests connect instantly using mobile money or card payments.
-* 🔗 **Leverage blockchain** — Transactions to network owners are handled transparently on-chain.
-* 🖥️ **Use plug-and-play hardware** — Providers install ZaaNet software on a Raspberry Pi 4+ device to manage payments and proxy access.
-
-Currently live in **Ghana**, ZaaNet is building a fairer and more connected digital economy.
+Welcome to the **ZaaNet GitHub Organization** — home of the smart contracts powering the ZaaNet decentralized WiFi monetization network.
 
 ---
 
-## 📂 What You’ll Find Here
+## What is ZaaNet?
 
-This organization hosts ZaaNet’s **open-source smart contracts**, which power:
+ZaaNet is a blockchain-integrated WiFi access layer that enables network owners to monetize internet access transparently and securely.
 
-* 🔐 **Payments** — Transparent settlement for hosts and guests.
-* 📜 **Access Control** — Ensuring fair use of WiFi resources.
-* ⚡ **Core Blockchain Logic** — The foundation of ZaaNet’s decentralized model.
+ZaaNet allows:
 
-> Other components of the ZaaNet platform (backend services, apps, firmware) are under active development and currently private.
+* **Network Owners (Hosts)** to monetize unused bandwidth.
+* **Guests** to access WiFi through secure, automated authentication.
+* **On-chain settlement** of platform fees and payment logic.
+* **Plug-and-play deployment** via OpenWRT-compatible routers.
 
----
-
-## 🤝 How to Contribute
-
-* Review our smart contracts.
-* Open issues or security reports.
-* Submit pull requests to improve code quality and functionality.
-
-Your contributions help make ZaaNet more secure, transparent, and reliable.
+ZaaNet is currently in early mainnet deployment in Ghana, with live routers processing real user sessions.
 
 ---
 
-## 📫 Connect With Us
+## Current Status
 
-* 🌍 Website: [zaanet.xyz](https://zaanet.xyz)
-* 📧 Email: [contact@zaanet.xyz](mailto:zaanetconnect@gmail.com)
+ZaaNet has completed:
+
+* ✔️ Smart contract deployment on mainnet
+* ✔️ Live router authentication and on-chain validation
+* ✔️ End-to-end payment → authorization flow
+
+ZaaNet is now in limited production rollout with real-world sessions validating system integrity and uptime.
+
+The focus phase is:
+
+* Stability
+* Field reliability
+* Router scalability
+* Operational hardening
 
 ---
 
-## ⭐ Our Vision
+## Architecture Overview
 
-To make **internet access open, fair, and rewarding**, with blockchain ensuring transparency and trust.
+ZaaNet consists of:
+
+1. **OpenWRT Router Layer**
+
+   * Captive portal (NoDogSplash)
+   * BinAuth-based authorization
+   * Secure backend verification
+   * Local caching & fail-safes
+
+2. **Backend Coordination Layer (Private)**
+
+   * Session management
+   * Payment verification
+   * Router registration
+   * Health monitoring
+
+3. **Smart Contracts (Public in this Org)**
+
+   * Network registration
+   * Payment processing
+   * Platform fee enforcement
+   * Transparent on-chain settlement
+
+This repository contains the blockchain logic powering the economic layer of ZaaNet.
 
 ---
 
-⚡ *This is just the beginning — join us in shaping the decentralized internet economy.* ⚡
+## What You'll Find Here
+
+This organization hosts the open-source smart contracts that handle:
+
+* **Payment Processing**
+* **Network Registration**
+* **Platform Fee Logic**
+* **Economic Settlement Mechanisms**
+
+These contracts ensure transparent, auditable, and tamper-resistant operation of the ZaaNet protocol.
+
+Other system components (router firmware customizations, backend services, provisioning tools) remain private during early deployment.
+
+---
+
+## How to Contribute
+
+We welcome:
+
+* Smart contract reviews
+* Gas optimization suggestions
+* Security audits and vulnerability disclosures
+* Pull requests improving contract clarity and efficiency
+
+If you discover a security issue, please open a responsible disclosure issue or contact us directly.
+
+---
+
+## Connect With Us
+
+* Website: [https://zaanet.xyz](https://zaanet.xyz)
+* Email: [zaanetofficial@gmail.com](mailto:zaanetofficial@gmail.com)
+
+---
+
+## Vision
+
+ZaaNet is building a decentralized infrastructure layer for WiFi monetization — where access, payments, and trust are automated and verifiable.
+
+We believe internet access markets should be:
+
+* Transparent
+* Programmable
+* Fair to providers
+* Accessible to users
+
+ZaaNet is in early deployment — and we are building deliberately, focusing on reliability before scale.
+
+This is foundational infrastructure.
